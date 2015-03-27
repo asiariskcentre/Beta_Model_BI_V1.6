@@ -54,7 +54,7 @@ display.flag <<- 0
 # Define server logic required to draw a histogram
   shinyServer(function(input, output, session) {
 
-    
+
          #------------------------------------------------------------------------
          # Clean all varibales and screen
            observe({
@@ -134,9 +134,9 @@ display.flag <<- 0
 
                    })
                    })
-  
-      
-      
+
+
+
           #------------------------------------------------------------------------
           # read in a file and store in display array
             observe({
@@ -185,7 +185,7 @@ display.flag <<- 0
 
                       #---------------------------------------------------------------------------------------------
                       # perform MNAIS data audit and display in to the UI
-                        MNAIS_display_array <- display_array[,-10]
+                        MNAIS_display_array  <- display_array[,-10]
                         MNAISdata_audit_array <<- as.data.frame(Perform_Data_Audit(MNAIS_display_array))
                         x_flag = 0
 
@@ -232,19 +232,18 @@ display.flag <<- 0
 
 
 
-
           #------------------------------------------------------------------------
           # Download User Input
                       output$Download_DisplayArray <- downloadHandler(
                       filename = function()     { paste('Validated_User_input.csv', sep='') },
                       content  = function(file) {write.csv(display_array, file)})
-          
+
           # Download Data Audit Summary
                       output$Download_MNAISDataAuditSummary <- downloadHandler(
                       filename = function() { paste('MNAIS_Data_Audit_Summary', '.csv', sep='') },
                       content  = function(file) {write.csv(MNAISdata_audit_display_array, file)})
-          
-          
+
+
                        output$Download_WBCISDataAuditSummary <- downloadHandler(
                        filename = function() { paste('WBCIS_Data_Audit_Summary', '.csv', sep='') },
                        content  = function(file) {write.csv(WBCISdata_audit_display_array, file)})
@@ -397,38 +396,49 @@ display.flag <<- 0
                        progress$set(value = value, detail = detail)}
 
 
-
                       # allow for district errors to pass through
 
+                       display_array[display_array[,9]  == 'Indemnity Level entry does not comply, Default will be taken', 8] <- 'Default'
+                       display_array[display_array[,9]  == 'Indemnity Level is greater than 1, Default will be taken', 8]     <- 'Default'
+                       display_array[display_array[,9]  == 'Indemnity Level is less than 0, Default will be taken', 8]        <- 'Default'
 
-                       display_array[display_array[,9] == 'Indemnity Level entry does not comply, Default will be taken', 8] <- 'Default'
-                       display_array[display_array[,9] == 'Indemnity Level is greater than 1, Default will be taken', 8]     <- 'Default'
-                       display_array[display_array[,9] == 'Indemnity Level is less than 0, Default will be taken', 8]        <- 'Default'
-
-                       display_array[display_array[,9] == 'Indemnity Level entry does not comply, Default will be taken', 9:10] <- 'Good'
-                       display_array[display_array[,9] == 'Indemnity Level is greater than 1, Default will be taken', 9:10]     <- 'Good'
-                       display_array[display_array[,9] == 'Indemnity Level is less than 0, Default will be taken', 9:10]        <- 'Good'
+                       display_array[display_array[,9]  == 'Indemnity Level entry does not comply, Default will be taken', 9] <- 'Good'
+                       display_array[display_array[,9]  == 'Indemnity Level is greater than 1, Default will be taken', 9]     <- 'Good'
+                       display_array[display_array[,9]  == 'Indemnity Level is less than 0, Default will be taken', 9]        <- 'Good'
+                      
+                       display_array[display_array[,10] == 'Indemnity Level entry does not comply, Default will be taken', 10] <- 'Good'
+                       display_array[display_array[,10] == 'Indemnity Level is greater than 1, Default will be taken', 10]     <- 'Good'
+                       display_array[display_array[,10] == 'Indemnity Level is less than 0, Default will be taken', 10]        <- 'Good'
+                      
 
                        MNAIS_display_array <- display_array[,-10]; if (is.function(updateProgress)) {updateProgress(detail = 'MNAIS array filtered ...........')}
-                       WBCIS_display_array <- display_array[,-9]; if (is.function(updateProgress)) {updateProgress(detail = 'WBCIS array filtered ...........')}
+                       WBCIS_display_array <- display_array[,-9] ; if (is.function(updateProgress)) {updateProgress(detail = 'WBCIS array filtered ...........')}
 
+
+                      MNAIS_display_array[MNAIS_display_array[,9]=='Crop by District not modelled',9] <- 'Deduct'
+                      MNAIS_display_array[MNAIS_display_array[,9]=='District mismatch',9] <- 'Deduct'
+                      
+                      WBCIS_display_array[WBCIS_display_array[,9]=='Crop by District not modelled',9] <- 'Deduct'
+                      WBCIS_display_array[WBCIS_display_array[,9]=='District mismatch',9] <- 'Deduct'
+
+                      
                        #options(warn=-1)
                         if(!is.null(MNAIS_display_array))
                             {
-                              MNAIS_display_array <- deduct_district_error_tsi(MNAIS_display_array)
+                              MNAIS_display_array_tmp <- deduct_district_error_tsi(MNAIS_display_array)
 
-                             if(nrow(MNAIS_display_array) > 0)
+                             if(nrow(MNAIS_display_array_tmp) > 0)
                                  { 
-                                     MNAIS_display_array = as.data.frame(Convert_Par_to_ID(MNAIS_display_array, adminID.db, Product_type.db))
+                                     MNAIS_display_array_converted = as.data.frame(Convert_Par_to_ID(MNAIS_display_array_tmp, adminID.db, Product_type.db))
                                      Message=paste('MNAIS Parameter to ID Conversion successful ....', Sys.time()); print(Message)
 
                                  #...............................................................................
                                  # ASSUMPTION USER INPUT DOES NOT CONTAIN ANY UNMODELLED DISTRICTS ANY MORE
-                                   MNAIS_Exposure.db                            <-  get_mutually_exclusive_exposure(MNAIS_display_array, Exposure.db) # get mutually exclusive modelled states
-                                   MNAIS_Dissaggregated_exposure.db             <-  disaggregate_exposure(MNAIS_Exposure.db, MNAIS_display_array, Aggregate_user_exposure, district_state_level_disaggregation, district_level_disaggregation, state_level_disaggregation)
+                                   MNAIS_Exposure.db                            <-  get_mutually_exclusive_exposure(MNAIS_display_array_converted, Exposure.db) # get mutually exclusive modelled states
+                                   MNAIS_Dissaggregated_exposure.db             <-  disaggregate_exposure(MNAIS_Exposure.db, MNAIS_display_array_converted, Aggregate_user_exposure, district_state_level_disaggregation, district_level_disaggregation, state_level_disaggregation)
                                    Message=paste('MNAIS Dissaggregation successful ....', Sys.time()); print(Message)
                                    if (is.function(updateProgress)) {updateProgress(detail = 'MNAIS Dissaggregation successful ...........')}
-                                 
+
                                    MNAIS_Dissaggregated_exposure.db             <<- as.data.frame(MNAIS_Dissaggregated_exposure.db)
                                    MNAIS_Display_Dissaggregated_exposure.db     <<- Convert_ID_to_Par_Dissagregate(MNAIS_Dissaggregated_exposure.db, adminID.db, Product_type.db) 
                                    MNAIS_Display_Dissaggregated_exposure.db     =   MNAIS_Display_Dissaggregated_exposure.db[,c(-6), drop=FALSE] #remove 'is modelled' tab
@@ -445,17 +455,21 @@ display.flag <<- 0
                          if(!is.null(WBCIS_display_array))
                             {
 
-                              WBCIS_display_array <- deduct_district_error_tsi(WBCIS_display_array)
-                           
-                             if(nrow(WBCIS_display_array) > 0)
+
+                              WBCIS_display_array_tmp <<- deduct_district_error_tsi(WBCIS_display_array)
+
+
+                             if(nrow(WBCIS_display_array_tmp) > 0)
                                 {
-                                  WBCIS_display_array = as.data.frame(Convert_Par_to_ID(WBCIS_display_array, adminID.db, Product_type.db))
+
+                               
+                                  WBCIS_display_array_converted = as.data.frame(Convert_Par_to_ID(WBCIS_display_array_tmp, adminID.db, Product_type.db))
                                   Message=paste('WBCIS Parameter to ID Conversion successful ....', Sys.time()); print(Message)
                                   
 #                               #...............................................................................
 #                               # ASSUMPTION USER INPUT DOES NOT CONTAIN ANY UNMODELLED DISTRICTS ANY MORE
-                                  WBCIS_Exposure.db                            <- get_mutually_exclusive_exposure(WBCIS_display_array, Exposure.db)
-                                  WBCIS_Dissaggregated_exposure.db             <-  disaggregate_exposure_WBCIS(WBCIS_Exposure.db, WBCIS_display_array,Aggregate_user_exposure, district_state_level_disaggregation, district_level_disaggregation, state_level_disaggregation)
+                                  WBCIS_Exposure.db                            <- get_mutually_exclusive_exposure(WBCIS_display_array_converted, Exposure.db)
+                                  WBCIS_Dissaggregated_exposure.db             <-  disaggregate_exposure_WBCIS(WBCIS_Exposure.db, WBCIS_display_array_converted,Aggregate_user_exposure, district_state_level_disaggregation, district_level_disaggregation, state_level_disaggregation)
                                   Message=paste('WBCIS Dissaggregation successful ....', Sys.time()); print(Message)
                                   if (is.function(updateProgress)) {updateProgress(detail = 'WBCIS Dissaggregation successful ...........')}
 
@@ -587,24 +601,24 @@ display.flag <<- 0
                            input$WBCIS_Simulation
                            if(input$WBCIS_Simulation == 0)
                            return()
-                           
+
                            #-------------------------------------------------------------------------------------------------
                            # Busy Animation
                            # Create a Progress object
                            progress <- shiny::Progress$new()
                            progress$set(message = "Computing ....", value = 0)
                            on.exit(progress$close())
-                           
+
                            updateProgress <- function(value = NULL, detail = NULL) 
                            {if (is.null(value)) {value <- progress$getValue(); value <- value + (progress$getMax() - value) / 2; Sys.sleep(1)}
                             progress$set(value = value, detail = detail)}
-                           
+
                            if(is.null(WBCIS_Display_Dissaggregated_exposure.db))
                                  {
                                      if (is.function(updateProgress)) {updateProgress(detail = 'WBCIS - Array not found .................')}
                                      if (is.function(updateProgress)) {updateProgress(detail = 'WBCIS - Array not found .................')}
                                  }
-  
+
                            if(!is.null(WBCIS_Display_Dissaggregated_exposure.db))
                                  {
                                    #...............................................................................
@@ -618,11 +632,11 @@ display.flag <<- 0
                                      LossP           =  as.numeric(as.character(WBCIS.tmp[,7]))
                                      Indemnity_Loss  =  TSI * LossP
                                      WBCIS.final     <<-  cbind(WBCIS.tmp, Indemnity_Loss)
-                                     colnames(WBCIS.final) <- c('State_Name','District_name','Crop_Name','Season_Name','TSI','Year','Loss Cost','Indemnity_Loss')
+                                     colnames(WBCIS.final) <<- c('State_Name','District_name','Crop_Name','Season_Name','TSI','Year','Loss Cost','Indemnity_Loss')
                                      Message=paste('WBCIS - Loss Computed ....', Sys.time()); print(Message)
                                      if (is.function(updateProgress)) {updateProgress(detail = 'WBCIS - Loss Computed .................')}
                                    #...............................................................................
-   
+
                                      Aggregated_WBCIS_Losses <- Compute_aggregate_WBCIS(WBCIS.final, Product_type.db, adminID.db)
                                      Message=paste('WBCIS - Level Aggregation computed ....', Sys.time()); print(Message)
                                      if (is.function(updateProgress)) {updateProgress(detail = 'WBCIS - Level Aggregation computed .................')}

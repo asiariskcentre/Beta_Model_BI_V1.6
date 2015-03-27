@@ -229,7 +229,8 @@ Check_UserInput_Prepare_Exposure_db <- function(adminID.db,Exposure.db,Product_t
 
           #---------------------------------------------------------------------
           # Check if State TSI < District TSI
-          #  UserInput.db = UserInput_is_modelled
+          # UserInput.db = UserInput_is_modelled
+
             `%ni%`        <-Negate(`%in%`)
             db_flag       = 0
             season_levels <- unique(as.character(UserInput.db[,5]))
@@ -254,7 +255,7 @@ Check_UserInput_Prepare_Exposure_db <- function(adminID.db,Exposure.db,Product_t
                          state.db = crop.db[as.character(crop.db[,2]) == st_l,,drop = FALSE] 
 
                          district_levels <- unique(as.character(state.db[,3]))
-                         
+
                          state_tsi    = sum(as.numeric(as.character(state.db[as.character(state.db[,3]) == 'All',6])))
                          district_tsi = sum(as.numeric(as.character(state.db[as.character(state.db[,3]) != 'All',6])))
 
@@ -263,7 +264,6 @@ Check_UserInput_Prepare_Exposure_db <- function(adminID.db,Exposure.db,Product_t
                               state.db[as.character(state.db[,3]) == 'All',10] = 'State TSI is less than District TSI'
                               state.db[as.character(state.db[,3]) == 'All',11] = 'State TSI is less than District TSI'
                             }
- 
 
                          if(db_flag == 1){ final.ui <- rbind(final.ui, state.db)}    
                          if(db_flag == 0){ final.ui <- state.db; db_flag = 1    }
@@ -273,7 +273,6 @@ Check_UserInput_Prepare_Exposure_db <- function(adminID.db,Exposure.db,Product_t
 
             UserInput.db = final.ui
           #---------------------------------------------------------------------
-           
 
           if (nrow(UserInput.db) > 0)
              { 

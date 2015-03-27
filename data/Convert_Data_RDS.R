@@ -1,4 +1,4 @@
-setwd('C:/Nirav/IARP/Beta_Model_BI_V2/Beta_Model_BI_V1.3/data')
+setwd('C:/Nirav/IARP/Beta_Model_BI_V2/Beta_Model_BI_V1.6/data')
 
 Crops       <- read.csv('Crops.csv'        , header = TRUE)
 saveRDS(Crops, file="Crops.Rds")

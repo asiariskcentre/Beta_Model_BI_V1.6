@@ -1400,8 +1400,8 @@
                  State.db <- gy.db[gy.db[,1] == ST_ID,]
 
                  TSI            <- sum(as.numeric(as.character(State.db$TSI)))
-                 LC             <- mean(as.numeric(as.character(State.db$LC)))
                  Indemnity_Loss <- sum(as.numeric(as.character(State.db$Indemnity_Loss)))
+                 LC             <- Indemnity_Loss / TSI 
 
 
                  level1     <- array(, dim=c(1,9))
@@ -1415,8 +1415,8 @@
                        year.db <- State.db[State.db[,2] == YR_ID,]
 
                        TSI            <- sum(as.numeric(as.character(year.db$TSI)))
-                       LC             <- mean(as.numeric(as.character(year.db$LC)))
                        Indemnity_Loss <- sum(as.numeric(as.character(year.db$Indemnity_Loss)))
+                       LC             <- Indemnity_Loss / TSI
 
                        
                        level2     <- array(, dim=c(1,9))
@@ -1430,8 +1430,8 @@
                             crop.db <- year.db[year.db[,3] == CR_ID,]
 
                             TSI            <- sum(as.numeric(as.character(crop.db$TSI)))
-                            LC             <- mean(as.numeric(as.character(crop.db$LC)))
                             Indemnity_Loss <- sum(as.numeric(as.character(crop.db$Indemnity_Loss)))
+                            LC             <- Indemnity_Loss / TSI
 
                             level3 <- array(, dim=c(1,9))
                             level3[1,] =  c('level3',ST_ID, YR_ID, CR_ID, 'All', 'All', TSI, LC, Indemnity_Loss)
@@ -1445,8 +1445,8 @@
                                    season.db <- crop.db[crop.db[,4] == SD_ID,]
 
                                    TSI            <- sum(as.numeric(as.character(season.db$TSI)))
-                                   LC             <- mean(as.numeric(as.character(season.db$LC)))
                                    Indemnity_Loss <- sum(as.numeric(as.character(season.db$Indemnity_Loss)))
+                                   LC             <- Indemnity_Loss / TSI
 
                                    level4 <- array(, dim=c(1,9))
                                    level4[1,] =  c('level4',ST_ID,  YR_ID, CR_ID, SD_ID, 'All', TSI, LC, Indemnity_Loss)

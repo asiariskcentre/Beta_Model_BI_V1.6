@@ -1,0 +1,641 @@
+State_ID,District_ID,DistrictName
+1201,15116,Nicobar
+1201,15623,North Andaman
+1201,15624,South Andaman
+1202,15117,Adilabad
+1202,15118,Anantapur
+1202,15119,Chittoor
+1202,15120,Cuddapah
+1202,15121,East Godavari
+1202,15122,Guntur
+1202,15123,Hyderabad
+1202,15124,Karimnagar
+1202,15125,Khammam
+1202,15126,Krishna
+1202,15127,Kurnool
+1202,15128,Mahbubnagar
+1202,15129,Medak
+1202,15130,Nalgonda
+1202,15131,Nellore
+1202,15132,Nizamabad
+1202,15133,Prakasam
+1202,15134,Rangareddy
+1202,15135,Srikakulam
+1202,15136,Vishakhapatnam
+1202,15137,Vizianagaram
+1202,15138,Warangal
+1202,15139,West Godavari
+1203,15001,Papum Pare
+1203,15002,Tawang
+1203,15003,Tirap
+1203,15004,Dibang Valley
+1203,15005,Upper Siang
+1203,15006,Upper Subansiri
+1203,15007,West Kameng
+1203,15008,West Siang
+1203,15140,Changlang
+1203,15141,East Kameng
+1203,15142,East Siang
+1203,15143,Kurung Kumey
+1203,15144,Anjaw
+1203,15145,Lower Dibang Valley
+1203,15146,Lower Subansiri
+1203,15587,Lohit
+1204,15009,Barpeta
+1204,15010,Chirang
+1204,15011,Cachar
+1204,15012,Udalguri
+1204,15013,Dhemaji
+1204,15014,Dhubri
+1204,15015,Dibrugarh
+1204,15016,Goalpara
+1204,15017,Golaghat
+1204,15018,Hailakandi
+1204,15019,Jorhat
+1204,15020,Kamrup
+1204,15021,Karbi Anglong
+1204,15022,Karimganj
+1204,15023,Kokrajhar
+1204,15024,Lakhimpur
+1204,15025,Marigaon
+1204,15026,Nagaon
+1204,15027,Dima Hasao
+1204,15028,Sibsagar
+1204,15029,Sonitpur
+1204,15030,Tinsukia
+1204,15588,Bongaigaon
+1204,15589,Nalbari
+1204,15590,Baksa
+1204,15591,Darrang
+1204,15592,Kamrup Metropolitan
+1205,15031, Araria
+1205,15032,Aurangabad
+1205,15033,Banka
+1205,15034,Begusarai
+1205,15035,Kaimur
+1205,15036,Bhagalpur
+1205,15037,Bhojpur
+1205,15038,Buxar
+1205,15039,Darbhanga
+1205,15040,Gaya
+1205,15041,Gopalganj
+1205,15042,Jamui
+1205,15043,Jehanabad
+1205,15044,Katihar
+1205,15045,Khagaria
+1205,15046,Kishanganj
+1205,15047,Lakhisarai
+1205,15048,Madhepura
+1205,15049,Madhubani
+1205,15050,Munger
+1205,15051,Muzaffarpur
+1205,15052,Nalanda
+1205,15053,Nawada
+1205,15054,West Champaran
+1205,15055,Patna
+1205,15056,East Champaran
+1205,15057,Purnia
+1205,15058,Rohtas
+1205,15059,Saharsa
+1205,15060,Samastipur
+1205,15061,Saran
+1205,15062,Sheikhpura
+1205,15063,Sheohar
+1205,15147,Sitamarhi
+1205,15148,Siwan
+1205,15149,Supaul
+1205,15150,Vaishali
+1205,15593,Arwal
+1206,15151,Chandigarh
+1207,15152,Bastar
+1207,15153,Bilaspur
+1207,15154,Dantewada
+1207,15155,Dhamtari
+1207,15156,Durg
+1207,15157,Janjgir-Champa
+1207,15158,Jashpur
+1207,15159,Kanker
+1207,15160,Kabirdham
+1207,15161,Korba
+1207,15162,Koriya
+1207,15163,Mahasamund
+1207,15164,Raigarh
+1207,15165,Raipur
+1207,15166,Rajnandgaon
+1207,15167,Surguja
+1207,15594,Bijapur
+1207,15595,Narayanpur
+1208,15168,Dadra and Nagar Haveli
+1209,15169,Daman
+1209,15170,Diu
+1210,15171,South West Delhi
+1210,15625,North West Delhi
+1210,15626,North East Delhi
+1210,15627,East Delhi
+1210,15628,Central Delhi
+1210,15629,New Delhi
+1210,15630,South Delhi
+1210,15632,West Delhi
+1210,15633,North Delhi
+1211,15172,North Goa
+1211,15173,South Goa
+1212,15174,Ahmedabad
+1212,15175,Amreli district
+1212,15176,Anand
+1212,15177,Banaskantha
+1212,15178,Bharuch
+1212,15179,Bhavnagar
+1212,15180,Dahod
+1212,15181,Gandhinagar
+1212,15182,Jamnagar
+1212,15183,Junagadh
+1212,15184,Kutch
+1212,15185,Kheda
+1212,15186,Mehsana
+1212,15187,Narmada
+1212,15188,Navsari
+1212,15189,Panchmahal
+1212,15190,Patan
+1212,15191,Porbandar
+1212,15192,Rajkot
+1212,15193,Sabarkantha
+1212,15194,Surendranagar
+1212,15195,The Dangs
+1212,15196,Vadodara
+1212,15197,Valsad
+1212,15596,Tapi
+1212,15639,Surat
+1213,15198,Ambala
+1213,15199,Bhiwani
+1213,15200,Faridabad
+1213,15201,Fatehabad
+1213,15202,Gurgaon
+1213,15203,Hissar
+1213,15204,Jhajjar
+1213,15205,Jind
+1213,15206,Kaithal
+1213,15207,Karnal
+1213,15208,Kurukshetra
+1213,15209,Mahendragarh
+1213,15210,Panchkula
+1213,15211,Panipat
+1213,15212,Rewari
+1213,15213,Rohtak
+1213,15214,Sirsa
+1213,15215,Sonipat
+1213,15216,Yamuna Nagar
+1213,15634,Palwal
+1213,15635,Mewat
+1214,15217,Bilaspur
+1214,15218,Chamba
+1214,15219,Hamirpur
+1214,15220,Kangra
+1214,15221,Kinnaur
+1214,15222,Kullu
+1214,15223,Lahaul and Spiti
+1214,15224,Mandi
+1214,15225,Shimla
+1214,15226,Sirmaur
+1214,15227,Solan
+1214,15228,Una
+1215,15229,Anantnag
+1215,15230,Badgam
+1215,15231,Baramulla
+1215,15232,Kishtwar
+1215,15233,Jammu
+1215,15234,Kargil
+1215,15235,Kathua
+1215,15236,Kupwara
+1215,15237,Leh
+1215,15238,Pulwama
+1215,15239,Poonch
+1215,15240,Rajauri
+1215,15241,Ganderbal
+1215,15242,Reasi
+1215,15597,Srinagar
+1215,15598,Bandipora
+1215,15599,Ramban
+1215,15600,Doda
+1215,15601,Udhampur
+1215,15602,Samba
+1215,15621,Kulgam
+1215,15622,Shopian
+1216,15243,Bokaro
+1216,15244,Chatra
+1216,15245,Deoghar
+1216,15246,Dhanbad
+1216,15247,Dumka
+1216,15248,Garhwa
+1216,15249,Giridih
+1216,15250,Godda
+1216,15251,Gumla
+1216,15252,Hazaribag
+1216,15253,Jamtara
+1216,15254,Koderma
+1216,15255,Latehar
+1216,15256,Lohardaga
+1216,15257,Pakur
+1216,15258,Palamu
+1216,15259,West Singhbhum
+1216,15260,East Singhbhum
+1216,15261,Ranchi
+1216,15262,Sahibganj
+1216,15263,Seraikela Kharsawan
+1216,15264,Simdega
+1216,15603,Khunti
+1216,15604,Ramgarh
+1217,15265,Bagalkot
+1217,15266,Ramanagara
+1217,15267,Bangalore Urban
+1217,15268,Belgaum
+1217,15269,Bellary
+1217,15270,Bidar
+1217,15271,Bijapur
+1217,15272,Chamarajnagar
+1217,15273,Chikkamagaluru
+1217,15274,Chitradurga
+1217,15275,Dakshina Kannada
+1217,15276,Davanagere
+1217,15277,Dharwad
+1217,15278,Gadag
+1217,15279,Gulbarga
+1217,15280,Hassan
+1217,15281,Haveri district
+1217,15282,Kodagu
+1217,15283,Kolar
+1217,15284,Koppal
+1217,15285,Mandya
+1217,15286,Mysore
+1217,15287,Raichur
+1217,15288,Shimoga
+1217,15289,Tumkur
+1217,15290,Udupi
+1217,15291,Uttara Kannada
+1217,15605,Yadgir
+1217,15606,Bangalore Rural
+1217,15607,Chikkaballapur
+1218,15292,Alappuzha
+1218,15293,Ernakulam
+1218,15294,Idukki
+1218,15295,Kannur
+1218,15296,Kasaragod
+1218,15297,Kollam
+1218,15298,Kottayam
+1218,15299,Kozhikode
+1218,15300,Malappuram
+1218,15301,Palakkad
+1218,15302,Pathanamthitta
+1218,15303,Thiruvananthapuram
+1218,15304,Thrissur
+1218,15305,Wayanad
+1219,15306,Lakshdweep
+1220,15064,Tikamgarh
+1220,15065,Ujjain
+1220,15066,Umaria
+1220,15067,Vidisha
+1220,15068,Khargone (West Nimar)
+1220,15091,Balaghat
+1220,15092,Barwani
+1220,15093,Betul
+1220,15094,Bhind
+1220,15095,Bhopal
+1220,15096,Burhanpur
+1220,15097,Chhatarpur
+1220,15098,Chhindwara
+1220,15099,Damoh
+1220,15307,Anuppur
+1220,15308,Ashok Nagar
+1220,15309,Datia
+1220,15310,Dewas
+1220,15311,Dhar
+1220,15312,Dindori
+1220,15313,Khandwa (East Nimar)
+1220,15314,Guna
+1220,15315,Gwalior
+1220,15316,Harda
+1220,15317,Hoshangabad
+1220,15318,Indore
+1220,15319,Jabalpur
+1220,15320,Alirajpur
+1220,15321,Katni
+1220,15322,Mandla
+1220,15323,Mandsaur
+1220,15324,Morena
+1220,15325,Narsinghpur
+1220,15326,Panna
+1220,15327,Raisen
+1220,15328,Rajgarh
+1220,15329,Ratlam
+1220,15330,Rewa
+1220,15331,Sagar
+1220,15332,Satna
+1220,15333,Sehore
+1220,15334,Seoni
+1220,15335,Shahdol
+1220,15336,Shajapur
+1220,15337,Sheopur
+1220,15338,Shivpuri
+1220,15339,Sidhi
+1220,15608,Jhabua
+1220,15609,Singrauli
+1220,15637,Neemuch
+1221,15069,Ahmednagar
+1221,15070,Akola
+1221,15071,Amravati
+1221,15072,Aurangabad
+1221,15073,Beed
+1221,15074,Buldhana
+1221,15075,Chandrapur
+1221,15076,Dhule
+1221,15077,Gadchiroli
+1221,15078,Gondia
+1221,15079,Mumbai suburban
+1221,15080,Hingoli
+1221,15081,Jalgaon
+1221,15082,Jalna
+1221,15083,Kolhapur
+1221,15084,Latur
+1221,15085,Nagpur
+1221,15086,Nanded
+1221,15087,Nandurbar
+1221,15088,Nashik
+1221,15089,Osmanabad
+1221,15090,Parbhani
+1221,15340,Pune
+1221,15341,Raigad
+1221,15342,Ratnagiri
+1221,15343,Sangli
+1221,15344,Satara
+1221,15345,Sindhudurg
+1221,15346,Solapur
+1221,15347,Thane
+1221,15348,Wardha
+1221,15349,Washim
+1221,15350,Yavatmal
+1221,15619,Bhandara
+1221,15631,Mumbai City
+1222,15351,Bishnupur
+1222,15352,Chandel
+1222,15353,Churachandpur
+1222,15354,Imphal East
+1222,15355,Senapati
+1222,15356,Tamenglong
+1222,15357,Thoubal
+1222,15358,Ukhrul
+1222,15359,Imphal West
+1223,15360,East Garo Hills
+1223,15361,East Khasi Hills
+1223,15362,Jaintia Hills
+1223,15363,Ri Bhoi
+1223,15364,South Garo Hills
+1223,15365,West Garo Hills
+1223,15366,West Khasi Hills
+1224,15367,Aizawl
+1224,15368,Champhai
+1224,15369,Kolasib
+1224,15370,Lawngtlai
+1224,15371,Lunglei
+1224,15372,Mamit
+1224,15373,Saiha
+1224,15374,Serchhip
+1225,15375,Dimapur
+1225,15376,Peren
+1225,15377,Mokokchung
+1225,15378,Mon
+1225,15379,Phek
+1225,15380,Tuensang
+1225,15381,Wokha
+1225,15382,Zunheboto
+1225,15610,Kiphire
+1225,15611,Kohima
+1225,15620,Longleng
+1226,15383,Angul
+1226,15384,Balasore
+1226,15385,Bargarh (Baragarh)
+1226,15386,Bhadrak
+1226,15387,Balangir
+1226,15388,Boudh (Bauda)
+1226,15389,Cuttack
+1226,15390,Debagarh (Deogarh)
+1226,15391,Dhenkanal
+1226,15392,Gajapati
+1226,15393,Ganjam
+1226,15394,Jagatsinghpur
+1226,15395,Jajpur
+1226,15396,Jharsuguda
+1226,15397,Kalahandi
+1226,15398,Kandhamal
+1226,15399,Kendrapara
+1226,15400,Kendujhar (Keonjhar)
+1226,15401,Khordha
+1226,15402,Koraput
+1226,15403,Malkangiri
+1226,15404,Mayurbhanj
+1226,15405,Nabarangpur
+1226,15406,Nayagarh
+1226,15407,Nuapada
+1226,15408,Puri
+1226,15409,Rayagada
+1226,15410,Sambalpur
+1226,15411,Subarnapur (Sonepur)
+1226,15412,Sundergarh
+1227,15413,Karaikal
+1227,15414,Mahe
+1227,15415,Pondicherry
+1227,15416,Yanam
+1228,15417,Tarn Taran
+1228,15418,Bathinda
+1228,15419,Faridkot
+1228,15420,Fatehgarh Sahib
+1228,15421,Firozpur
+1228,15422,Gurdaspur
+1228,15423,Hoshiarpur
+1228,15424,Jalandhar
+1228,15425,Kapurthala
+1228,15426,Ludhiana
+1228,15427,Mansa
+1228,15428,Moga
+1228,15429,Sri Muktsar Sahib
+1228,15430,Shahid Bhagat Singh Nagar
+1228,15431,Patiala
+1228,15432,Ajitgarh (Mohali)
+1228,15433,Sangrur
+1228,15612,Barnala
+1228,15613,Rupnagar
+1228,15614,Amritsar
+1229,15100,Karauli
+1229,15101,Kota
+1229,15102,Nagaur
+1229,15103,Pali
+1229,15104,Rajsamand
+1229,15105,Sawai Madhopur
+1229,15106,Sikar
+1229,15107,Sirohi
+1229,15434,Ajmer
+1229,15435,Alwar
+1229,15436,Banswara
+1229,15437,Baran
+1229,15438,Barmer
+1229,15439,Bharatpur
+1229,15440,Bhilwara
+1229,15441,Bikaner
+1229,15442,Bundi
+1229,15443,Churu
+1229,15444,Dausa
+1229,15445,Dholpur
+1229,15446,Dungapur
+1229,15447,Ganganagar
+1229,15448,Hanumangarh
+1229,15449,Jaipur
+1229,15450,Jaisalmer
+1229,15451,Jalore
+1229,15452,Jhalawar
+1229,15453,Jhunjhunu
+1229,15454,Jodhpur
+1229,15455,Tonk
+1229,15456,Udaipur
+1229,15636,Chittorgarh
+1229,15638,Pratapgarh
+1230,15457,East Sikkim
+1230,15458,North Sikkim
+1230,15459,South Sikkim
+1230,15460,West Sikkim
+1231,15108,Madurai
+1231,15109,Nagapattinam
+1231,15110,Namakkal
+1231,15111,Nilgiris
+1231,15112,Perambalur
+1231,15113,Pudukkottai
+1231,15114,Ramanathapuram
+1231,15115,Salem
+1231,15461,Ariyalur
+1231,15462,Chennai
+1231,15463,Coimbatore
+1231,15464,Cuddalore
+1231,15465,Krishnagiri
+1231,15466,Dindigul
+1231,15467,Erode
+1231,15468,Kanyakumari
+1231,15469,Karur
+1231,15470,Sivaganga
+1231,15471,Thanjavur
+1231,15472,Theni
+1231,15473,Tiruvallur
+1231,15474,Tiruvarur
+1231,15475,Thoothukudi
+1231,15476,Tiruchirappalli
+1231,15477,Tirunelveli
+1231,15478,Tiruvannamalai
+1231,15479,Vellore
+1231,15480,Viluppuram
+1231,15481,Virudhunagar
+1231,15615,Dharmapuri
+1231,15616,Tirupur
+1231,15640,Kanchipuram
+1232,15482,Dhalai
+1232,15483,North Tripura
+1232,15484,South Tripura
+1232,15485,West Tripura
+1233,15486,Agra
+1233,15487,Aligarh
+1233,15488,Allahabad
+1233,15489,Ambedkar Nagar
+1233,15490,Auraiya
+1233,15491,Azamgarh
+1233,15492,Budaun
+1233,15493,Bagpat
+1233,15494,Bahraich
+1233,15495,Ballia
+1233,15496,Balrampur
+1233,15497,Banda
+1233,15498,Barabanki
+1233,15499,Bareilly
+1233,15500,Basti
+1233,15501,Bijnor
+1233,15502,Bulandshahr
+1233,15503,Chandauli
+1233,15504,Chitrakoot
+1233,15505,Deoria
+1233,15506,Etah
+1233,15507,Etawah
+1233,15508,Faizabad
+1233,15509,Farrukhabad
+1233,15510,Fatehpur
+1233,15511,Firozabad
+1233,15512,Gautam Buddh Nagar
+1233,15513,Ghaziabad
+1233,15514,Ghazipur
+1233,15515,Gonda
+1233,15516,Gorakhpur
+1233,15517,Hamirpur
+1233,15518,Hardoi
+1233,15519,Hathras
+1233,15520,Jalaun
+1233,15521,Jaunpur district
+1233,15522,Jhansi
+1233,15523,Jyotiba Phule Nagar
+1233,15524,Kannauj
+1233,15525,Ramabai Nagar
+1233,15526,Kaushambi
+1233,15527,Kushinagar
+1233,15528,Lakhimpur Kheri
+1233,15529,Lalitpur
+1233,15530,Lucknow
+1233,15531,Maharajganj
+1233,15532,Mahoba
+1233,15533,Mainpuri
+1233,15534,Mathura
+1233,15535,Mau
+1233,15536,Meerut
+1233,15537,Mirzapur
+1233,15538,Moradabad
+1233,15539,Muzaffarnagar
+1233,15540,Pilibhit
+1233,15541,Pratapgarh
+1233,15542,Raebareli
+1233,15543,Rampur
+1233,15544,Saharanpur
+1233,15545,Sant Kabir Nagar
+1233,15546,Sant Ravidas Nagar
+1233,15547,Shahjahanpur
+1233,15548,Shravasti
+1233,15549,Siddharthnagar
+1233,15550,Sitapur
+1233,15551,Sonbhadra
+1233,15552,Sultanpur
+1233,15553,Unnao
+1233,15554,Varanasi
+1233,15617,Kanshi Ram Nagar
+1233,15618,Kanpur
+1234,15555,Almora
+1234,15556,Bageshwar
+1234,15557,Chamoli
+1234,15558,Champawat
+1234,15559,Dehradun
+1234,15560,Haridwar
+1234,15561,Nainital
+1234,15562,Pauri Garhwal
+1234,15563,Pithoragarh
+1234,15564,Rudraprayag
+1234,15565,Tehri Garhwal
+1234,15566,Udham Singh Nagar
+1234,15567,Uttarkashi
+1235,15568,Bankura
+1235,15569,Bardhaman
+1235,15570,Birbhum
+1235,15571,Dakshin Dinajpur
+1235,15572,Darjeeling
+1235,15573,Purba Medinipur
+1235,15574,Howrah
+1235,15575,Hooghly
+1235,15576,Jalpaiguri
+1235,15577,Cooch Behar
+1235,15578,Kolkata
+1235,15579,Maldah
+1235,15580,Murshidabad
+1235,15581,Nadia
+1235,15582,North 24 Parganas
+1235,15583,Purulia
+1235,15584,South 24 Parganas
+1235,15585,Uttar Dinajpur
+1235,15586,Paschim Medinipur

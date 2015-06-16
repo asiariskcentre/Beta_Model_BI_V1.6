@@ -1,0 +1,34 @@
+
+•	Install R (http://cran.rstudio.com/), try installing version 3.1.1 and 3.1.2. if you are running a 64 bit (install both 32 and 64 bit to be on the safe side)
+•	Install R Studio (http://www.rstudio.com/products/RStudio/) 
+•	Install http://cran.r-project.org/bin/windows/Rtools/Rtools32.exe
+•	Install http://cran.r-project.org/bin/windows/Rtools/Rtools31.exe
+
+
+Open R studio and copy and paste the following on the console
+
+install.packages('shiny')
+install.packages('RColorBrewer')
+install.packages('scales')
+install.packages('lattice')
+install.packages('dplyr', repos='http://cran.rstudio.com/')
+install.packages('plotGoogleMaps')
+install.packages('leafletR')
+install.packages('rMaps')
+install.packages('devtools')
+require(devtools)
+install_github('ramnathv/rCharts@dev')
+install_github('rCharts', 'ramnathv')
+require(devtools)
+install_github('ramnathv/rMaps')
+devtools::install_github("rstudio/shiny-incubator", ref = "0f343efe9b6c255e6687aaa52b5443cf975f96e7")
+install.packages('gdata')
+
+
+
+library(shiny)       
+runGitHub("Beta_Model_BI_V1.4", "asiariskcentre")
+
+
+library(shiny)       
+runGitHub("test2", "asiariskcentre")

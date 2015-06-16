@@ -1,0 +1,139 @@
+CropSeason_ID,CropName,Crop_ID,SeasonName,Season_ID
+1,Rice,1,Rabi,1
+2,Wheat,2,Rabi,1
+3,Sugarcane,3,Rabi,1
+4,Potato,4,Rabi,1
+5,Cotton,5,Rabi,1
+6,Apple,6,Rabi,1
+7,Arhar,7,Rabi,1
+8,Bajra,8,Rabi,1
+9,Banana,9,Rabi,1
+10,Barley,10,Rabi,1
+11,Bengalgram,11,Rabi,1
+12,Blackgram,12,Rabi,1
+13,Brinjal,13,Rabi,1
+14,Cashewnut,14,Rabi,1
+15,Castor Oilseed,15,Rabi,1
+16,Chillies,16,Rabi,1
+17,Cholam,17,Rabi,1
+18,Coriander,18,Rabi,1
+19,Cowpea,19,Rabi,1
+20,Cumbu,20,Rabi,1
+21,Cumin,21,Rabi,1
+22,Fenugreek (Methi),22,Rabi,1
+23,Gingelly,23,Rabi,1
+24,Ginger,24,Rabi,1
+25,Gram,25,Rabi,1
+26,Grapes,26,Rabi,1
+27,Greengram,27,Rabi,1
+28,Groundnut,28,Rabi,1
+29,Guar,29,Rabi,1
+30,Guava,30,Rabi,1
+31,HorseGram,31,Rabi,1
+32,Isabgol,32,Rabi,1
+33,Jowar,33,Rabi,1
+34,Jute,34,Rabi,1
+35,Lentil,35,Rabi,1
+36,Litchi,36,Rabi,1
+37,Maize,37,Rabi,1
+38,Mango,38,Rabi,1
+39,Moong,39,Rabi,1
+40,Moringa,40,Rabi,1
+41,Moth,41,Rabi,1
+42,Mustard,42,Rabi,1
+43,Oilpalm,43,Rabi,1
+44,Onion,44,Rabi,1
+45,Orange,45,Rabi,1
+46,Peas,46,Rabi,1
+47,Pomegranate,47,Rabi,1
+48,Pulses,48,Rabi,1
+49,Ragi,49,Rabi,1
+50,Sesame Seeds,50,Rabi,1
+51,Sorghum/ Jowar,51,Rabi,1
+52,Soyabean,52,Rabi,1
+53,Sunflower,53,Rabi,1
+54,Tapioca,54,Rabi,1
+55,Taramira,55,Rabi,1
+56,Tomato,56,Rabi,1
+57,Turmeric,57,Rabi,1
+58,Urad,58,Rabi,1
+59,Arecanut,59,Rabi,1
+60,Sesanum,60,Rabi,1
+61,Peppers,61,Rabi,1
+62,Cardamom,62,Rabi,1
+63,Coconut,63,Rabi,1
+64,Pineapple,64,Rabi,1
+65,Rice,1,Kharif,2
+66,Wheat,2,Kharif,2
+67,Sugarcane,3,Kharif,2
+68,Potato,4,Kharif,2
+69,Cotton,5,Kharif,2
+70,Apple,6,Kharif,2
+71,Arhar,7,Kharif,2
+72,Bajra,8,Kharif,2
+73,Banana,9,Kharif,2
+74,Barley,10,Kharif,2
+75,Bengalgram,11,Kharif,2
+76,Blackgram,12,Kharif,2
+77,Brinjal,13,Kharif,2
+78,Cashewnut,14,Kharif,2
+79,Castor Oilseed,15,Kharif,2
+80,Chillies,16,Kharif,2
+81,Cholam,17,Kharif,2
+82,Coriander,18,Kharif,2
+83,Cowpea,19,Kharif,2
+84,Cumbu,20,Kharif,2
+85,Cumin,21,Kharif,2
+86,Fenugreek (Methi),22,Kharif,2
+87,Gingelly,23,Kharif,2
+88,Ginger,24,Kharif,2
+89,Gram,25,Kharif,2
+90,Grapes,26,Kharif,2
+91,Greengram,27,Kharif,2
+92,Groundnut,28,Kharif,2
+93,Guar,29,Kharif,2
+94,Guava,30,Kharif,2
+95,HorseGram,31,Kharif,2
+96,Isabgol,32,Kharif,2
+97,Jowar,33,Kharif,2
+98,Jute,34,Kharif,2
+99,Lentil,35,Kharif,2
+100,Litchi,36,Kharif,2
+101,Maize,37,Kharif,2
+102,Mango,38,Kharif,2
+103,Moong,39,Kharif,2
+104,Moringa,40,Kharif,2
+105,Moth,41,Kharif,2
+106,Mustard,42,Kharif,2
+107,Oilpalm,43,Kharif,2
+108,Onion,44,Kharif,2
+109,Orange,45,Kharif,2
+110,Peas,46,Kharif,2
+111,Pomegranate,47,Kharif,2
+112,Pulses,48,Kharif,2
+113,Ragi,49,Kharif,2
+114,Sesame Seeds,50,Kharif,2
+115,Sorghum/ Jowar,51,Kharif,2
+116,Soyabean,52,Kharif,2
+117,Sunflower,53,Kharif,2
+118,Tapioca,54,Kharif,2
+119,Taramira,55,Kharif,2
+120,Tomato,56,Kharif,2
+121,Turmeric,57,Kharif,2
+122,Urad,58,Kharif,2
+123,Arecanut,59,Kharif,2
+124,Sesanum,60,Kharif,2
+125,Peppers,61,Kharif,2
+126,Cardamom,62,Kharif,2
+127,Coconut,63,Kharif,2
+128,Pineapple,64,Kharif,2
+129,Bhindi,65,Rabi,1
+130,Bhindi,65,Kharif,2
+131,Chick Peas,66,Rabi,1
+132,Chick Peas,66,Kharif,2
+133,Sweet Orange,67,Rabi,1
+134,Sweet Orange,67,Kharif,2
+135,Rapeseed,68,Rabi,1
+136,Rapeseed,68,Kharif,2
+137,Horse Gram,69,Rabi,1
+138,Horse Gram,69,Kharif,2

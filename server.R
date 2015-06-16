@@ -45,7 +45,7 @@ Sys.setlocale(locale="English")
   Synthetic_gy.db <<- get_gy_db(raw_synthetic, Risk_Items, adminID.db)
 
   DB_Message      =   paste('All Databases loaded and prepared - ', Sys.time()); print(DB_Message)
-  rm(CropSeasons, Districts, States, Risk_Items, Crops, raw_historic, raw_synthetic)
+ # rm(CropSeasons, Districts, States, Risk_Items, Crops, raw_historic, raw_synthetic)
 #...............................................................................
 
 

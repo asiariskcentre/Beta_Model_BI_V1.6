@@ -142,23 +142,25 @@ Check_UserInput_Prepare_Exposure_db <- function(adminID.db,Exposure.db,Product_t
 
 #..........................................................................................................
 # Check if districts and states are modelled
-  Check_UserInput_modelled_adminlevel<- function(UserInput.db, Exposure.db)
+  Check_UserInput_modelled_adminlevel<- function(UserInput_name_mismatch, Exposure.db2)
        {
-        UserInput.db2 = as.matrix(UserInput.db)
+        UserInput.db2 = as.matrix(UserInput_name_mismatch)
         # UserInput.db2 = as.matrix(UserInput_name_mismatch)
       # remove all mismatches except district
       # x=UserInput.db2[UserInput.db2[,9]  == 'District mismatch',]
         UserInput.db2[UserInput.db2[,10]  == 'District mismatch',3]  <- 'All'
         UserInput.db2[UserInput.db2[,10]  == 'District mismatch',10] <- 'Good'
         UserInput.db2[UserInput.db2[,11]  == 'District mismatch',11] <- 'Good'
-        UserInput.db <- UserInput.db2[UserInput.db2[,10] == 'Good',,drop=FALSE]
-        UserInput.db <- UserInput.db[,c(-10,-11),drop = FALSE]
+        UserInput.db3 <- UserInput.db2[UserInput.db2[,10] == 'Good',,drop=FALSE]
+        UserInput.db3 <- UserInput.db3[,c(-10,-11),drop = FALSE]
 
       # merge with user input
-        ui = merge(UserInput.db, Exposure.db, by=c('State_Name','District_Name','Crop','Season'), all.x = TRUE)
+        ui = merge(UserInput.db3, Exposure.db2, by=c('State_Name','District_Name','Crop','Season'), all.x = TRUE)
         ui = cbind(ui[,5],ui[,1:4], ui[,6:11], ui[,10:11])
         colnames(ui) <- c('rownumber', 'State_Name','District_Name','Crop','Season','TSI','EPI','Premium_rate','Indemnity','Is_MNAIS_Modeled','Is_WBCIS_Modeled','State_Is_MNAIS_Modeled','State_Is_WBCIS_Modeled')
-
+        
+        ui[is.na(ui)] <- 0
+        
        state_levels <- unique(as.character(ui$State_Name))
        db_flag = 0
 
@@ -418,13 +420,13 @@ Check_UserInput_Prepare_Exposure_db <- function(adminID.db,Exposure.db,Product_t
          #..........................................................................................................
          #  c) Check if District_ID's, Crop_ID's and Season_ID's are valid as per the MNAIS Term database.
          #  d) Check if all reported entries are modelled crops per district and season (Check with TOM)
-               Exposure.db    <- Check_UserInput_Prepare_Exposure_db(adminID.db,Exposure.db,Product_type.db)
+               Exposure.db2    <- Check_UserInput_Prepare_Exposure_db(adminID.db,Exposure.db,Product_type.db)
          #..........................................................................................................
 
          #..........................................................................................................
          #   Check if districts and states are modelled
          #   Check if all reported entries are modelled crops per district and season
-               UserInput_is_modelled    <- Check_UserInput_modelled_adminlevel(UserInput_name_mismatch, Exposure.db)
+               UserInput_is_modelled    <- Check_UserInput_modelled_adminlevel(UserInput_name_mismatch, Exposure.db2)
          #..........................................................................................................
 
          #..........................................................................................................
